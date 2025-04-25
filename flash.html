@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H3/H8 Firmware Flasher</title>
+</head>
+<body>
+	<center>
+		<h1>H3/H8 Firmware Flasher</h1>
+		
+		<!-- File Input for the Binary File -->
+		<input type="file" id="firmwareFile" accept=".bin">
+		
+		<!-- Button to Connect to Serial Device -->
+		<button id="connectButton" disabled>Serial Port</button>	
+		
+		<!-- Button to Start Flashing -->
+		<button id="flashButton" disabled>Flash Firmware</button>
+
+		<!-- Button to abort -->
+		<button id="abortButton" disabled>Abort</button>
+
+		<br/>
+		<br/>
+		
+		<!-- Status Display -->
+		<b><div id="status"></div></b>
+		
+		<br/>
+		<br/>
+		
+		<a href='/h3h8'>Forum Home</a> | 
+		<a href='/h3/chanedit.html'>Channel Editor</a> | 
+		<a href='/h3/bandplan.html'>Band Plan Editor</a> |
+		<a href='/h3/codeplug.html'>Codeplug Manager</a> |
+		<a href='/h3/nightly.php'>Dev Build</a>
+	</center>
+    <script src="flasher2.js"></script>
+</body>
+</html>
