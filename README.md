@@ -7,7 +7,7 @@ Select Choose File
 
 
 
-![screenshot](doc/02.png)
+![screenshot](doc/01.png)
 
 
 Select Serial Port
