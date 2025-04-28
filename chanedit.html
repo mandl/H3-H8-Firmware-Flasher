@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H3 Channel Editor</title>
+    <style>
+        .index-cell {
+            text-align: right;
+        }
+        .freq-input {
+            width: 13ch;
+            text-align: right;
+        }        
+        .name-input {
+            width: 16ch;
+            text-align: left;
+        }
+        .tone-input {
+            width: 8ch;
+            text-align: right;
+        }
+        .power-input {
+            width: 6ch;
+            text-align: right;
+        }
+        .groups-input {
+            width: 8ch;
+            text-align: left;
+        }
+        .scrollable-container {
+            width: auto;
+            overflow: auto;
+        }
+        th {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background-color: #808080;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+    </style>    
+</head>
+<body>
+	<center>
+		<h1>nicFW TD-H3 Channel Editor</h1>
+        <div>
+            <button id="connectButton">Serial Port</button>
+            <button id="readButton" disabled>Read</button>
+            <button id="writeButton" disabled>Write</button>
+            <button id="saveButton">Save</button>
+            <button id="loadButton">Load</button>
+            <input type="file" title="Load channel file" id="csvFile" accept=".csv" style="display: none;" />
+            <br/><br/>
+        </div>
+        <i><div id="status"> </div></i>
+        <div id="scroller" class="scrollable-container">
+		    <table border="0" id="grid"></table>
+        </div>
+        <br/>        
+		<a href='flash.html'>Firmware Flasher</a> | 
+		<a href='bandplan.html'>Band Plan Editor</a> |
+        <a href='codeplug.html'>Codeplug Manager</a> |
+	</center>
+    <script src="chanedit.js"></script>
+</body>
+</html>

@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H3/H8 Firmware Flasher</title>
+    <title>nicFW Codeplug Manager</title>
 </head>
 <body>
 	<center>
-		<h1>H3/H8 Firmware Flasher</h1>
+		<h1>nicFW Codeplug Manager</h1>
 		
 		<!-- File Input for the Binary File -->
-		<input type="file" id="firmwareFile" accept=".bin">
-		
+		<input type="file" id="codeplugFile" accept=".nfw">
+
+		<!-- Button to save codeplug -->
+		<button id="saveButton" disabled>Save Codeplug</button>	        
+
 		<!-- Button to Connect to Serial Device -->
-		<button id="connectButton" disabled>Serial Port</button>	
+		<button id="connectButton">Serial Port</button>	
 		
-		<!-- Button to Start Flashing -->
-		<button id="flashButton" disabled>Flash Firmware</button>
+		<!-- Button to Read -->
+		<button id="readButton" disabled>Read Codeplug</button>
+
+		<!-- Button to Write -->
+		<button id="writeButton" disabled>Write Codeplug</button>
+
 
 		<!-- Button to abort -->
 		<button id="abortButton" disabled>Abort</button>
@@ -30,10 +37,10 @@
 		<br/>
 		<br/>
 		
+		<a href='flash.html'>Firmware Flasher</a> | 
 		<a href='chanedit.html'>Channel Editor</a> | 
 		<a href='bandplan.html'>Band Plan Editor</a> |
-		<a href='codeplug.html'>Codeplug Manager</a> |	
 	</center>
-    <script src="flasher2.js"></script>
+    <script src="codeplug.js"></script>
 </body>
 </html>
